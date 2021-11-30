@@ -1,0 +1,135 @@
+:root {
+    /* Primary colors */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral colors */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* typography */
+    --font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--very-light-gray);
+}
+
+p {
+    font-size: 15px;
+    color: var(--transparent-white);
+}
+
+.container {
+    margin: 15vh 7vw;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.content {
+    height: 450px;
+    padding: 45px 45px 45px 40px ;
+}
+
+.content figure img {
+    padding-bottom: 30px;
+}
+
+.content h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+    color: var(--very-light-gray);
+}
+
+.content p {
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    
+    background-color: var(--very-light-gray);
+}
+
+.top {
+    background-color: var(--Bright-orange);
+}
+
+.middle {
+    background-color: var(--Dark-cyan);
+}
+
+.bottom {
+    background-color: var(--Very-dark-cyan);
+}
+
+.orange {
+    color: var(--Bright-orange);
+}
+
+.cyan {
+    color: var(--Dark-cyan);
+}
+
+.green {
+    color: var(--Very-dark-cyan);
+}
+@media (min-width: 450px) {
+    .container {
+        flex-flow: row wrap;
+        margin: 15vh auto;
+        width: 900px;
+    }
+
+    .content {
+        height: 500px;
+        width: 300px;
+        padding-right: 50px;
+    }
+
+    .content p {
+        padding-bottom: 80px;
+    }
+
+    .btn:hover {
+        background-color: transparent;
+        border: 2px solid var(--very-light-gray);
+        color:var(--very-light-gray);
+        transition: all ease 0.4s;
+    }
+    
+}
+
+.attribution { 
+    position: relative;
+    bottom: 10vh;
+    color: black;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
